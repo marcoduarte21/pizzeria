@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería Pronto</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!--header es para el encabezado de la pagina-->
+    <header>
+        <div class="header-container">
+
+            <!--a es para links-->
+            <h1><a href="index.html">PIZZERÍA PRONTO</a></h1>
+            <!--nav es para el navegador-->
+            <nav>
+                <!--ul es para lista-->
+     <ul>
+         <!--li es el elemento de una lista-->
+        <li><a href="#presentation">Inicio</a></li>
+        <li><a href="#about">Sobre nosotros</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#reservation">Reservas</a></li>
+    </ul>
+            </nav>
+
+        </div>
+        
+    </header>
+
+   <!--Section separa la pagina en secciones--> 
+    <section class="presentation" id="presentation">
+        <!--div es contenedor de elementos que desea encapsular-->
+    <div class="presentation-video">
+        <!--autoplay es para reproducirse automaticamente, muted para quitar sonido, 
+            loop es para reproducir n veces-->
+        <video src="./resources/resources/video/pizza.mp4" autoplay muted loop></video>
+    </div>
+    <div class="dark-overlay">
+
+        <div class="presentation-content">
+            <h2>Deliciosa pizza liberiana hecha con el sabor de la leña</h2>
+            <p>
+                Pizza liberiana hecha con el sabor caracteristico de la leña, más de 15 sabores y tipos
+                diferentes de combinaciones, ven por la tuya en Pizzería Pronto.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--Sobre nosotros-->
+<section class="about" id="about">
+
+<div class="about-container left" id="about-img1"></div>
+<div class="about-container right about-content">
+    <h2 class="about-title">Nuestras pizzas</h2>
+    <p>
+<!--Lorem30 es para generar 30 caracteres automat-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti, pariatur 
+        eaque architecto voluptatem incidunt dolorem itaque sint voluptates distinctio in dolore 
+        quod velit maiores accusantium nemo magni ab recusandae?
+    </p>
+</div>
+
+<div class="about-container right" id="about-img2"></div>
+<div class="about-container left about-content">
+<h2 class="about-title">Nuestra historia</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam deserunt in animi fugit 
+    autem maxime ipsum! Eum aliquid architecto similique delectus? Asperiores eaque blanditiis
+     quae nihil culpa maxime, iure laborum cumque dolore ipsa labore quod libero! Id repellat quibusdam 
+     quod repellendus quaerat, totam, autem adipisci quisquam doloribus voluptatum aliquam dolores?</p>
+
+</div>
+
+</section>
+
+<section class="menu" id="menu">
+
+    <div class="dark-overlay">
+        <div class="menu-inner">
+
+            <h2 class="menu-title">Nuestra carta</h2>
+            <ul>
+            <li>
+                <div>Artículo</div>
+                <div>Precio</div>
+            
+            </li>
+            <li>
+                <div>Artículo</div>
+                <div>Precio</div>
+            
+            </li>
+            <li>
+                <div>Artículo</div>
+                <div>Precio</div>
+            
+            </li>
+            <li>
+                <div>Artículo</div>
+                <div>Precio</div>
+            
+            </li>
+            <li>
+                <div>Artículo</div>
+                <div>Precio</div>
+            
+            </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="reservation" id="reservation">
+<h2>Formulario de reserva</h2>
+<!--form genera un formulario-->
+<form action="#">
+<div class="form-central">
+    <div class="form-left">
+    <label for="">Fecha</label>
+    <input type="date" name="" id=""><br>
+    
+    <label for="">Nombre y apellido</label>
+    <input type="text" name="" id=""><br>
+    
+    <label for="">Hora</label>
+    <input type="time" name="" id=""><br>
+
+</div>
+    
+<div class="form-right">
+
+    <label for="">E-mail</label>
+    <input type="email" name="" id=""><br>
+    
+    <label for="">Cantidad de comensales</label>
+    <input type="number" name="" id=""><br>
+    
+    <label for="">Telefono</label>
+    <input type="text" name="" id=""><br>
+</div>
+</div>
+
+<label for="">Comentarios</label>
+<textarea name="" id="" cols="120" rows="4"></textarea><br>
+
+<input type="submit" value="Reservar">
+</form>
+</section>
+
+<!--footer es pie de pagina-->
+<footer>
+    <p>Pizzeria Pronto &copy;. Todos los derechos reservados.</p>
+</footer>
+</body>
+
+</html>

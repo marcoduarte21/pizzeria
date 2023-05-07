@@ -1,0 +1,237 @@
+ /*De dominio general */
+ *{
+     /* box sizing es para que el tamaño total de la caja
+     incluya el padding y los margenes*/
+     box-sizing: border-box;
+     font-size: "Roboto", sans-serif;
+     margin: 0;
+ }
+
+ .left{
+     /*elemento flote a la derecha*/
+     float: left;
+ }
+
+.right{
+    float: right;
+}
+
+ header{
+     /* fixed es para que el elemento se muestre en toda
+     la pagina, que se mueva.*/
+     position: fixed;
+     /*background-color es para darle color al fondo*/
+     background-color:orangered;
+     width: 100%;
+
+ }
+
+ .header-container{
+     /* margin auto es para que el contenedor quede centrado*/
+     margin: auto;
+     /* max width es para que el elem tenga un tamaño y ancho maximo*/
+     max-width: 1700px;
+     padding: 0.5rem;
+ }
+
+ header a{
+    /* Color de letra */
+     color: white;
+     /*text decoration es psara quitar el subrayado*/
+     text-decoration: none;
+     padding: 0 1.8rem;
+
+ }
+
+ h1{
+     /*display inline es para que aparezcan de modo horizontal*/
+     display: inline;
+ }
+
+ nav{
+     /*float right es para acomodar a la derecha*/
+     float: right;
+     margin: 9px;
+ }
+
+ li{
+     display: inline;
+ }
+
+ header li{
+     display: inline;
+     /*list-style es para dar estilo a los elementos de la lista*/
+     list-style: none;
+    
+ }
+
+ .presentation{
+     /*altura*/
+     height: 720px;
+     /* tamaño de letra*/
+     font-size: 25px;
+ }
+
+ .presentation-video{
+     height: 720px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: -1;
+
+ }
+
+ .presentation-video video{
+     /*ocupa el maximo posible del contenedor padre 
+     sin modificar el ancho ni el largo*/
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+ }
+
+ .dark-overlay{
+     /*color transparente*/
+     background-color: rgba(0, 0, 0, 0.7);
+     width: 100%;
+     height: 100%;
+ }
+
+ .presentation-content{
+     color: white;
+     text-align: center;
+     padding: 285px 0;
+     margin: auto;
+ }
+
+ /* section about*/
+
+.about{
+    height: 1000px;
+    font-size: 18px;
+}
+
+.about-container{
+    width: 50%;
+    height: 50%;
+}
+
+.about-content{
+    text-align: justify;
+    padding: 130px 30px;
+}
+
+.about-title{
+    margin: 2rem;
+    text-align: center;
+}
+
+#about-img1{
+    background: url(./resources/resources/images/pizza1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-img2{
+    background: url(./resources/resources/images/pizza2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Menu*/
+
+.menu{
+    /* No flote */
+    clear:both;
+    font-size: 20px;
+    text-align: center;
+    background: url(./resources/resources/images/pizza3.jpg);
+
+}
+
+.menu-inner{
+    padding: 3rem;
+    color: white;
+} 
+ 
+.menu-title{
+    margin: 2rem;
+}
+
+.menu ul{
+    padding: 0;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 2rem;
+}
+
+.menu ul li div{
+    display: inline;
+    padding: 4rem;
+}
+
+/*Reservation*/
+
+.reservation{
+    height: 550px;
+    text-align: center;
+}
+
+.form-central{
+    display: block;
+}
+
+.form-left{
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+.form-right{
+    width: 50%;
+    height: 300px;
+    float: right;
+}
+
+.reservation label{
+
+    display: block;
+    padding: 1.2rem;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+input[type="email"],
+input[type="number"]{
+    width: 12rem;
+}
+
+textarea{
+    margin: 2rem;
+}
+
+input[type="submit"]{
+    font-size: 16px;
+    margin: 1rem;
+    height: 2rem;
+    width: 8rem;
+    display: block;
+    margin: auto;
+}
+
+/* Footer*/
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 2rem;
+    padding: 1rem;
+
+}
